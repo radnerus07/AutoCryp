@@ -510,7 +510,7 @@ body {
 }
 @media (max-width: 768px) {
   .carousle-cards {
-    width: 84%;
+    width: 85%;
     min-width: 250px;
     padding: 50px 20px 50px 20px;
     min-height: 300px;
@@ -555,7 +555,7 @@ body {
 }
 @media (max-width: 768px) {
   .carousleslide-items {
-    width: 88%;
+    width: 90%;
   }
 }
 
