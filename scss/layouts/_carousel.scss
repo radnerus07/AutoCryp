@@ -2,6 +2,10 @@
 .carousle {
   background: linear-gradient(to right, white 40%, #313a5a 40%);
 
+  @include responsive(mobile) {
+    background: #313a5a;
+  }
+
   &-items {
     position: relative;
     padding: 170px 0;
@@ -17,9 +21,10 @@
     transform: translate(-15%);
 
     @include responsive(mobile) {
-      height: 180px;
-      width: 120px;
-      left: 41px;
+      
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
     }
   }
 
@@ -35,7 +40,7 @@
     transition: all 1s ease-in;
 
     @include responsive(mobile) {
-      width: 85%;
+      width: 84%;
       min-width: 250px;
       padding: 50px 20px 50px 20px;
       min-height: 300px;
@@ -51,6 +56,9 @@
 .image-text {
   padding: 40px 0 0 5px;
   font-weight: weight(medium);
+  @include responsive(mobile) {
+    color: $text-color-general;
+  }
 }
 
 .author-name {
@@ -78,7 +86,7 @@
   }
 
   @include responsive(mobile) {
-    width: 90%;
+    width: 88%;
   }
 
 }
@@ -119,4 +127,9 @@
   position: absolute;
   bottom: 10%;
   left: 50%;
+
+  @include responsive(mobile) {
+
+    transform: translateX(-50%);
+  }
 }
