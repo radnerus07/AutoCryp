@@ -1,9 +1,17 @@
+
+//utilites..
 @import 'utilities/breakpoints';
 @import 'utilities/reset';
 @import 'utilities/container';
+
+
+// components
 @import 'components/typogrphy';
 @import 'components/variables';
 @import 'components/buttons';
+
+
+// layouts
 @import 'layouts/header';
 @import 'layouts/hero';
 @import 'layouts/character';
