@@ -1,0 +1,64 @@
+// .....hero.section......
+
+.hero {
+  font-size: 0;
+  background-color: $primary-color;
+  width: 100%;
+
+  &-para {
+    margin-top: 40px;
+    @include responsive(mobile) {
+      margin-top: 25px;
+      max-width: 100%;
+      padding: 0 50px;
+    }
+  }
+  &-btn {
+    margin-top: 35px;
+  }
+
+  &-image {
+    display: inline-block;
+    width: 50%;
+    text-align: end;
+    @include responsive(mobile) {
+      width: 100%;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  &-heading {
+    max-width: 80%;
+    @include responsive(mobile) {
+      max-width: 100%;
+    }
+   
+  }
+
+  &,
+  &-content {
+    padding-top: 128px;
+
+    @include responsive(mobile) {
+      padding-top: 68px;
+    }
+  }
+
+  &-image img {
+    max-width: 100%;
+    max-height: 792px;
+    object-fit: cover;
+  
+  }
+  .bitcoins {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-top: 100px;
+    @include responsive(mobile) {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

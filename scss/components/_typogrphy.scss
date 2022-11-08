@@ -1,0 +1,74 @@
+@import './variables';
+
+
+body {
+  color: $text-color-general;
+  font-family: "Rubik", sans-serif;
+}
+
+.heading {
+
+  &-xl {
+    font-size: 48px;
+    color: $text-color-general;
+    font-weight: weight(bold);
+
+    @include responsive(mobile) {
+     font-size: 30px;
+    }
+  }
+  
+  &-lg {
+    font-size: 40px;
+    line-height: 48px;
+    color: $text-color;
+    font-weight: weight(bold);
+
+      @include responsive(mobile) {
+       font-size: 20px;
+       line-height: 28px;
+    }
+  
+  }
+  &-md {
+    font-size: 32px;
+    color: $text-color;
+    font-weight: weight(bold);
+  }
+
+}
+
+.heading-sm {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.27;
+  font-weight: weight(medium);
+  color: $text-color;
+}
+
+.paragraph {
+  &-md {
+    font-size: 16px;
+    line-height: 32px;
+    color: $text-color-general;
+    font-weight: 400;
+
+    @include responsive(mobile) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  
+  }
+  &-lg {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $text-color-light;
+
+    @include responsive(mobile) {
+     font-size: 16px;
+     line-height: 26px;
+    }
+  }
+  
+}

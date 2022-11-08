@@ -1,0 +1,35 @@
+
+/* .......footer........ */
+
+.footer {
+    text-align: center;
+    padding-bottom: 115px;
+
+    &-heading {
+        color: #5b6c94;
+      }
+      
+      &-links {
+        color: #5b6c94;
+      }
+      &-links:not(:last-child) {
+        margin-right: 20px;
+        
+        @include responsive(mobile) {
+          margin-right: 4px;
+        }
+      }
+      
+      &-links:not(:last-child):after {
+        content: "/";
+        padding-left: 20px;
+      }
+      &-nav {
+        margin-top: 50px;
+      }
+  }
+ 
+
+  .nav-links--footer {
+    color: $text-color-light;
+  }

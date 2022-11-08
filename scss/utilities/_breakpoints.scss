@@ -1,0 +1,12 @@
+@mixin responsive($breakpoints) {
+    @if $breakpoints == tablet {
+        @media (max-width : 1024px) { @content};
+    }
+    @if $breakpoints == tablet-md {
+        @media (max-width : 992px) { @content};
+    }
+    @if $breakpoints == mobile {
+        @media (max-width : 768px) { @content};
+    }
+}
+  

@@ -1,0 +1,122 @@
+/* .........carousle......... */
+.carousle {
+  background: linear-gradient(to right, white 40%, #313a5a 40%);
+
+  &-items {
+    position: relative;
+    padding: 170px 0;
+  }
+
+  &-image {
+    background: url(/dist/svg/quotes\ big.svg) no-repeat center/cover;
+    height: 413px;
+    width: 300px;
+    position: absolute;
+    left: 15%;
+    top: 0;
+    transform: translate(-15%);
+
+    @include responsive(mobile) {
+      height: 180px;
+      width: 120px;
+      left: 41px;
+    }
+  }
+
+  &-cards {
+    display: inline-block;
+    min-height: 500px;
+    width: 420px;
+    padding: 80px 50px 63px 50px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.95);
+    white-space: normal;
+    margin-right: 50px;
+    transition: all 1s ease-in;
+
+    @include responsive(mobile) {
+      width: 85%;
+      min-width: 250px;
+      padding: 50px 20px 50px 20px;
+      min-height: 300px;
+    }
+  }
+
+  &-cards:last-child {
+    visibility: hidden;
+  }
+}
+
+
+.image-text {
+  padding: 40px 0 0 5px;
+  font-weight: weight(medium);
+}
+
+.author-name {
+  color: #031d5b;
+  font-weight: weight(medium);
+  line-height: 2px;
+  margin-top: 43px;
+}
+
+.card-text {
+  margin-top: 23px;
+}
+
+.carousleslide-items {
+  margin-left: auto;
+  white-space: nowrap;
+  width: 70%;
+  height: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: ease 0.6ms;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include responsive(mobile) {
+    width: 90%;
+  }
+
+}
+
+.active-card {
+  background-color: $background-color;
+
+  .quotes-active {
+    fill: $text-color-general;
+  }
+
+  .card-text {
+    color: $text-color-general;
+  }
+
+  .author-name {
+    color: $text-color-general;
+  }
+}
+
+.dot {
+  display: inline-block;
+  padding: 7px;
+  border: 2px solid $text-color-general;
+  border-radius: 50%;
+  margin-right: 5px;
+
+  &:hover {
+    background-color: $text-color-general;
+  }
+
+  &.active {
+    background-color: $text-color-general;
+  }
+}
+
+.carousle-slidedots {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}

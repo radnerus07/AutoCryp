@@ -1,0 +1,64 @@
+/* .......characters section....... */
+
+.fnt-clrchge {
+    color: $text-color-light;
+  }
+  
+  .fnt-fm-chge {
+    font-size: 17px;
+    font-weight: weight(medium);
+    @include responsive(tablet) {
+      font-size: 16px;
+    }
+  }
+
+  .characters {
+    margin-top: -90px;
+    position: relative;
+    z-index: 2;
+    max-width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-heading {
+        margin-bottom: 28px;
+      }
+      
+      &-heading:after {
+        content: "";
+        display: block;
+        width: 15%;
+        border-bottom: solid 3px $background-color;
+        padding-top: 7px;
+        margin-bottom: 18px;
+      }
+      
+      &-contain {
+        font-size: 0;
+        border-radius: 10px;
+        box-shadow: 0 10px 34px 0 rgba(210, 210, 210, 0.5);
+        background-color: $text-color-general;
+        padding: 66px 80px 56px 80px;
+      }
+      &-cards {
+        display: inline-block;
+        width: calc((100% - 100px) / 3);
+        vertical-align: top;
+        @include responsive(tablet-md) {
+         width: 100%;
+        vertical-align: top;
+              }
+      }
+      &-contain > &-cards:not(:last-child) {
+        margin-right: 50px;
+        margin-bottom: 20px;
+      }
+      
+      &-logo {
+        background-color: rgba(31, 219, 132, 0.1);
+        padding: 20px 15px;
+        display: inline-block;
+        border-radius: 6px;
+        margin-bottom: 26px;
+      }
+  }

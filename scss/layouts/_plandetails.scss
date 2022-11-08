@@ -1,0 +1,90 @@
+/* ..............plan-details................ */
+
+.plan-details {
+    padding: 200px 0;
+    font-size: 0;
+    text-align: center;
+    @include responsive(mobile) {
+      padding: 100px 0;
+    }
+  }
+  .monthly {
+    color: $background-color;
+    font-size: 16px;
+    font-weight: weight(bold);
+    padding: 16px 35px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    display: inline-block;
+    border: solid 1px $background-color;
+    &:hover {
+        background-color: #f1fff8;
+      }
+
+      @include responsive(mobile) {
+        font-size: 10px;
+        padding: 12px 20px;
+      }
+  }
+
+  /* ........cards......... */
+
+.card {
+    font-size: 0;
+    margin-top: 64px;
+    &-items {
+        display: inline-block;
+        width: calc((100% - 20px) / 3);
+        padding: 56px 40px;
+        vertical-align: top;
+        transition: all 0.4s;
+
+        @include responsive(mobile) {
+          width: 100%;
+          margin-top: 10px;
+          max-width: 400px;
+        }
+      }
+      &-items:not(:last-child) {
+        margin-right: 10px;
+      }
+      &-price {
+        font-size: 72px;
+        color: $background-color;
+        line-height: 64px;
+        margin-top: 31px;
+      }
+      &-lists {
+        padding: 60px 0 0 0;
+        min-height: 300px;
+      }
+      
+      &-lists__items {
+        display: block;
+        margin-bottom: 20px;
+      }
+      &-items:hover {
+        box-shadow: 0 7px 24px 10px rgb(83 83 83 / 10%);
+        background-color: $text-color-general;
+        border-top: solid 4px $border-color;
+      }
+  }
+
+  .mr-t-50 {
+    margin-top: 50px;
+  }
+  
+
+  .mr-t-50 {
+    margin-top: 50px;
+  }
+  
+  .brd-l-5 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .brd-r-5 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }

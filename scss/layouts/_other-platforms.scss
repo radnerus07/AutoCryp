@@ -1,0 +1,23 @@
+/* ..........other-platforms...section..... */
+
+.other-platforms {
+  padding: 200px 0 180px 0;
+  text-align: center;
+
+  &__heading {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: weight(bold);
+    color: #031d5b;
+    margin-bottom: 46px;
+  }
+  
+}
+
+.mg-right:not(:last-child) {
+  margin-right: 47px;
+}
+
+.mg-top {
+  margin-top: 30px;
+}
